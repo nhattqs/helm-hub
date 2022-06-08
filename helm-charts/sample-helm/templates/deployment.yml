@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-deployment
+  labels:
+    app: web-app
+    type: hello-world
+spec:
+  replicas: {{ .Values.images.helloWorldApp.replicas }}
+  selector:
+    matchLabels:
+      app: web-app
+  template:
+    metadata:
+      name: hello-pod
+      labels: 
+        {{- range $k, $v := .Values.images.helloWorldApp.labels }}
+        {{$k}}: {{$v}}
+        {{- end}}
+    spec:
+      containers:
+      - name: hello-world
+        image: {{ .Values.images.helloWorldApp.tag }}
+        ports: 
+        - containerPort: {{ .Values.images.helloWorldApp.containerPort }}
+        imagePullPolicy: Never

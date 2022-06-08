@@ -1,0 +1,8 @@
+images:
+  helloWorldApp:
+    tag: hello-with-number:1.1
+    labels:
+      app: web-app
+      type: hello-demo
+    containerPort: 8080
+    replicas: 2
