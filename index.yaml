@@ -3,12 +3,12 @@ entries:
   sample-helm:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2022-06-08T05:04:13.36829154Z"
+    created: "2022-06-08T05:11:26.313049277Z"
     description: A Helm chart for Kubernetes
-    digest: 493ab0b2c51dada20bc582ec61d0f535da49bc94b8246056fff8fce68e994007
+    digest: 924f77de4441f7e9609aa0217e0ddf9ba72b98e685612ab247ee0c120dad5319
     name: sample-helm
     type: application
     urls:
-    - https://github.com/nhattqs/nhattqs.github.io/releases/download/sample-helm-0.1.0/sample-helm-0.1.0.tgz
-    version: 0.1.0
-generated: "2022-06-08T05:04:13.121446612Z"
+    - https://github.com/nhattqs/nhattqs.github.io/releases/download/sample-helm-0.1.1/sample-helm-0.1.1.tgz
+    version: 0.1.1
+generated: "2022-06-08T05:11:25.986337198Z"
