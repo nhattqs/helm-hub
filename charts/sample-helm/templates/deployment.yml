@@ -12,7 +12,7 @@ spec:
       app: web-app
   template:
     metadata:
-      name: hello-pod
+      name: hello-pod-sample
       labels: 
         {{- range $k, $v := .Values.images.helloWorldApp.labels }}
         {{$k}}: {{$v}}
