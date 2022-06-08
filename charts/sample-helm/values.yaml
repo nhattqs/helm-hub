@@ -5,4 +5,4 @@ images:
       app: web-app
       type: hello-demo
     containerPort: 8080
-    replicas: 3
+    replicas: 2
